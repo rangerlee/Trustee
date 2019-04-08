@@ -1,6 +1,6 @@
 #pragma once
 #include <map>
-#include <thread/native_thread.hpp>
+#include <scarlet/thread/native_thread.hpp>
 #include <plog/Log.h>
 #include "proc_trd.hpp"
 

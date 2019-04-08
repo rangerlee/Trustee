@@ -1,7 +1,7 @@
 #pragma once
 #include "proc_cfg.h"
 #include <cstring>
-#include <thread/native_thread.hpp>
+#include <scarlet/thread/native_thread.hpp>
 #include <plog/Log.h>
 
 class ProcThread : public scarlet::native_thread {
