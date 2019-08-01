@@ -60,7 +60,7 @@ private:
 		si.cb = sizeof(si);		
 
 		BOOL ret = ::CreateProcessA(NULL, command,	NULL, NULL,	FALSE,
-			0, NULL, config_.path.data(), &si, &pi_);
+			0, NULL, config_.path.empty() ? NULL : config_.path.data(), &si, &pi_);
 		if(ret){
 			LOGI << "CreateProcess [" << config_.exec << "] PID " << pi_.dwProcessId;
 			HANDLE wait[kWaitSize] = { pi_.hProcess, event_ };
